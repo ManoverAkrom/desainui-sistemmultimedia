@@ -1,0 +1,88 @@
+/* Media Responsive */
+
+/* Tablet */
+@media (max-width: 1024px)
+{
+  /* Perubahan pada konten */
+  .konten
+  {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10%;
+  }
+  .konten img
+  {
+    float: none;
+  }
+  .konten1
+  {
+    width: 100%;
+  }
+  .konten2
+  {
+    width: 100%;
+  }
+  .cardBox
+  {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 840px)
+{
+  /* Perubahan pada Navbar */
+  nav ul
+  {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: var(--nav-height);
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--blue3);
+    transform: translateX(100%);
+    transition: all 0.8s;
+  }
+  nav ul.slide
+  {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  nav ul li
+  {
+    text-align: center;
+    width: 100%;
+    background-color: var(--blue3);
+  }
+  .nav--rol
+  {
+    transform: translateY(calc(-5.5 * var(--nav-height)));
+    opacity: 0;
+    transition: all 1s;
+  }
+  .menu-toggle
+  {
+    display: flex;
+  }
+}
+
+/* Lebih Kecil */
+@media (max-width: 440px)
+{
+  .konten2
+  {
+    scale: 0.9;
+  }
+
+  .icon span
+  {
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+    padding: 10px;
+    /* scale: 0.7; */
+  }
+}
